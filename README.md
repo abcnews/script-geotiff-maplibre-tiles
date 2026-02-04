@@ -16,7 +16,7 @@ A automated utility to convert high-resolution equirectangular images (Plate Car
 
 2. **set up the Docker container**:
   ```bash
-  docker build -t $IMAGE_NAME .
+  docker build -t gdal-processor:local .
   ```
 3. **Run the processing script**:
 

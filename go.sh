@@ -9,4 +9,4 @@ fi
 # Run the processing script inside the container
 # Mounting the current directory to /data in the container
 echo "--- Running GDAL Processing in Docker ---"
-docker run --rm -v "$(pwd):/data" gdal-processor:local ./process_file.sh "$@"
+docker run --rm -v "$(pwd):/data" gdal-processor:local ./process_files.sh "$@"

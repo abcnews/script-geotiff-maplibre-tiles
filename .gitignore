@@ -5,3 +5,7 @@ temp_mercator.tif
 upload.js
 merged_source.vrt
 node_modules
+.DS_Store
+tiles.tar
+delete.js
+src-january
