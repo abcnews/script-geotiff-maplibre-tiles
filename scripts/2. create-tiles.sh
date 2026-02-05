@@ -6,7 +6,7 @@ OUTPUT_DIR="./tiles"
 ZOOM_LEVELS="0-8" # For 500m data, consider 0-9 or 0-10
 
 if [ "$#" -lt 1 ]; then
-    echo "Usage: ./process_file.sh <input_file1> [input_file2 ...]"
+    echo "Usage: scripts/2.\ create-tiles.sh <input_file1> [input_file2 ...]"
     exit 1
 fi
 
