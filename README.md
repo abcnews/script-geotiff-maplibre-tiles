@@ -8,11 +8,15 @@ A automated utility to convert high-resolution equirectangular images (Plate Car
 
 ## Quick Start
 
-1. **Download the source imagery** (optional/example):
+1. **Download the source imagery**:
    ```bash
-   ./getBlueMarbleTiles
+   # Default (Black Marble 2016)
+   ./fetch-imagery.sh
+
+   # Or specify a specific NASA product template
+   ./fetch-imagery.sh "https://assets.science.nasa.gov/.../january/world.topo.bathy.200401.3x21600x21600.{tile}_geo.tif"
    ```
-   This will download the high-resolution 500m Blue Marble tiles into a `./src` folder.
+   This will download the high-resolution tiles into the `./src` folder. The script uses a `{tile}` placeholder to fetch all 8 NASA tiles (A1..D2).
 
 2. **set up the Docker container**:
   ```bash
